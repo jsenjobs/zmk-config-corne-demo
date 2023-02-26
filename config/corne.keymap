@@ -29,39 +29,49 @@
   combos {
     compatible = "zmk,combos";
 
-    tab {
-      bindings = <&trans>;
-      key-positions = <2 3>;
+    m3 {
+      bindings = <&mo 3>;
+      key-positions = <37 40>;
     };
 
-    ctrl {
-      bindings = <&kp LCTRL>;
-      key-positions = <26 27>;
+    lalt {
+      bindings = <&kp LALT>;
+      key-positions = <37 16>;
     };
 
-    cmd {
-      bindings = <&kp LCMD>;
-      key-positions = <37 38>;
+    lgui_alt {
+      bindings = <&kp LG(LALT)>;
+      key-positions = <37 15>;
     };
 
-    alt {
-      bindings = <&kp LEFT_ALT>;
-      key-positions = <39 40>;
+    lgui {
+      bindings = <&kp LGUI>;
+      key-positions = <37 14>;
     };
 
-    shift {
-      bindings = <&kp LSHIFT>;
-      key-positions = <8 9>;
+    ralt {
+      bindings = <&kp RALT>;
+      key-positions = <40 19>;
     };
 
-    caps_word {
-      bindings = <&caps_word>;
-      key-positions = <17 18>;
+    rgui_alt {
+      bindings = <&kp RG(RALT)>;
+      key-positions = <40 20>;
     };
 
-    delete {
-      bindings = <&kp DEL>;
-      key-positions = <32 33>;
+    rgui {
+      bindings = <&kp RGUI>;
+      key-positions = <40 21>;
+    };
+
+    ctrl_a {
+      bindings = <&kp LC(A)>;
+      key-positions = <37 13>;
+    };
+
+    rctrl {
+      bindings = <&kp RCTRL>;
+      key-positions = <40 22>;
     };
   };
 
