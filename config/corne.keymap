@@ -118,5 +118,14 @@
                                                &kp LGUI        &trans  &kp SPACE    &kp ENTER  &trans      &kp RALT
       >;
     };
+
+    sys {
+      bindings = <
+&kp K_LOCK  &trans  &trans  &trans  &trans  &kp C_RESET    &trans  &trans  &trans  &trans  &trans  &trans
+    &trans  &trans  &trans  &trans  &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
+    &trans  &trans  &trans  &trans  &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans  &trans       &trans    &trans  &trans  &trans
+      >;
+    };
   };
 };
