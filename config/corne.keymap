@@ -73,6 +73,26 @@
       bindings = <&kp RCTRL>;
       key-positions = <40 22>;
     };
+
+    lrs {
+      bindings = <&reset>;
+      key-positions = <0 24 5>;
+    };
+
+    lrb {
+      bindings = <&bootloader>;
+      key-positions = <0 24 5 38>;
+    };
+
+    rrs {
+      bindings = <&reset>;
+      key-positions = <11 35 6>;
+    };
+
+    rrb {
+      bindings = <&bootloader>;
+      key-positions = <6 39 35 11>;
+    };
   };
 
   macros {
