@@ -75,12 +75,12 @@
     };
 
     lmo4 {
-      bindings = <&mo 4>;
+      bindings = <&tog 4>;
       key-positions = <24 25 26 37>;
     };
 
     rmo4 {
-      bindings = <&mo 4>;
+      bindings = <&tog 4>;
       key-positions = <40 33 34 35>;
     };
   };
@@ -91,7 +91,7 @@
   keymap {
     compatible = "zmk,keymap";
 
-    base {
+    qwert {
       bindings = <
   &kp TAB  &kp Q  &kp W     &kp E  &kp R      &kp T      &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BACKSPACE
 &kp LCTRL  &kp A  &kp S     &kp D  &kp F      &kp G      &kp H  &kp J      &kp K    &kp L  &kp SEMI        &kp SQT
@@ -111,10 +111,10 @@
 
     lower {
       bindings = <
-  &kp CAPS  &kp INT1  &kp N2    &kp N3  &kp N4     &kp N5       &kp N6    &kp N7     &kp N8     &kp N9  &kp N0  &kp BACKSPACE
- &kp LCTRL    &trans  &trans    &trans  &trans     &trans     &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT  &trans         &trans
-&kp LSHIFT    &trans  &trans    &trans  &trans     &trans       &trans    &trans     &trans     &trans  &trans         &trans
-                              &kp LGUI  &trans  &kp SPACE    &kp ENTER    &trans  &kp RCTRL
+  &kp CAPS  &kp N1  &kp N2    &kp N3  &kp N4     &kp N5       &kp N6    &kp N7     &kp N8     &kp N9  &kp N0  &kp BACKSPACE
+ &kp LCTRL  &trans  &trans    &trans  &trans     &trans     &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT  &trans         &trans
+&kp LSHIFT  &trans  &trans    &trans  &trans     &trans       &trans    &trans     &trans     &trans  &trans         &trans
+                            &kp LGUI  &trans  &kp SPACE    &kp ENTER    &trans  &kp RCTRL
       >;
     };
 
@@ -129,37 +129,19 @@
 
     sys {
       bindings = <
-&kp K_LOCK  &trans  &trans  &trans  &trans  &kp C_RESET    &kp C_RESET  &trans  &trans  &trans  &trans  &kp K_LOCK
-     &to 0   &to 5  &trans  &trans  &trans       &trans         &trans  &trans  &trans  &trans  &trans      &trans
-    &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans  &trans  &trans  &trans      &trans
-                            &trans  &trans       &trans         &trans  &trans  &trans
+&kp K_LOCK        &trans        &trans        &trans        &trans   &kp C_RESET    &kp K_LOCK        &trans        &trans        &trans        &trans   &kp C_RESET
+    &tog 0        &tog 5        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                                              &trans        &trans        &trans        &trans        &trans        &trans
       >;
     };
 
-    dp_base {
+    DP {
       bindings = <
   &kp TAB  &kp SEMI  &kp COMMA   &kp DOT  &kp P      &kp Y        &kp F  &kp G      &kp C  &kp R  &kp L  &kp BACKSPACE
-&kp LCTRL     &kp A      &kp O     &kp E  &kp U      &kp I        &kp D  &kp H      &kp T  &kp N  &kp S      &kp MINUS
+&kp LCTRL     &kp A      &kp O     &kp E  &kp U      &kp I        &kp D  &kp H      &kp T  &kp N  &kp S       &kp FSLH
 &kp LSHFT  &kp APOS      &kp Q     &kp J  &kp K      &kp X        &kp B  &kp M      &kp W  &kp V  &kp Z     &kp RSHIFT
-                                &kp LGUI  &mo 6  &kp SPACE    &kp ENTER  &mo 7  &kp RCTRL
-      >;
-    };
-
-    DP_EXT1 {
-      bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-      >;
-    };
-
-    DP_EXT2 {
-      bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+                                &kp LGUI  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp RCTRL
       >;
     };
   };
