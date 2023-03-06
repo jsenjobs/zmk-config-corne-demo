@@ -96,12 +96,12 @@
 
     dm5 {
       bindings = <&mo 5>;
-      key-positions = <4 5 17>;
+      key-positions = <4 5 3>;
     };
 
     dt5 {
       bindings = <&to 5>;
-      key-positions = <5 17 29>;
+      key-positions = <5 17 4>;
     };
   };
 
