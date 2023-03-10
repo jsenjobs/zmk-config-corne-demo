@@ -76,32 +76,32 @@
 
     lrs {
       bindings = <&reset>;
-      key-positions = <0 24 5>;
+      key-positions = <0 1 37>;
     };
 
     lrb {
       bindings = <&bootloader>;
-      key-positions = <0 24 5 38>;
+      key-positions = <37 1 2>;
     };
 
     rrs {
       bindings = <&reset>;
-      key-positions = <11 35 6>;
+      key-positions = <10 40 11>;
     };
 
     rrb {
       bindings = <&bootloader>;
-      key-positions = <6 39 35 11>;
+      key-positions = <10 9 40>;
     };
 
-    dm5 {
-      bindings = <&mo 5>;
-      key-positions = <4 5 3>;
-    };
-
-    dt5 {
+    ltsys {
       bindings = <&to 5>;
-      key-positions = <5 17 4>;
+      key-positions = <37 5>;
+    };
+
+    rtsys {
+      bindings = <&to 5>;
+      key-positions = <40 6>;
     };
   };
 
@@ -132,7 +132,7 @@
     raise {
       bindings = <
   &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR   &kp ESC
-&kp LCTRL    &trans  &trans    &trans      &trans        &mo 5    &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH
+&kp LCTRL    &trans  &trans    &trans      &trans       &trans    &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH
 &kp LSHFT    &trans  &trans    &trans      &trans       &trans    &kp TILDE  &kp UNDER   &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE
                              &kp LGUI      &trans    &kp SPACE    &kp ENTER     &trans  &kp RCTRL
       >;
@@ -159,7 +159,7 @@
     sys {
       bindings = <
 &kp K_LOCK        &reset   &bootloader        &trans        &trans        &reset    &kp K_LOCK        &trans        &trans        &trans        &trans        &reset
-     &to 0         &to 1        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &tog 0        &tog 5
+     &to 0         &to 1        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                               &trans        &trans        &trans        &trans        &trans        &trans
       >;
